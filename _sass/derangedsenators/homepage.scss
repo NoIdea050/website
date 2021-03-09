@@ -15,7 +15,7 @@
   color: #e2c373;
   text-decoration: none;
   list-style: none;
-  display: flex;
+  display: block;
   font-size: 30px;
 }
 
@@ -41,7 +41,7 @@
 
 #logo img {
   height: 80px;
-  width: 50%;
+  width: 70%;
 }
 
 // nav ul {
@@ -90,6 +90,11 @@ section.sec3 {
   width: 100%;
   height: 100vh;
   background: rgb(39, 39, 39);
+}
+
+.sec4 p {
+  font-size: 20px;
+  text-align: center;
 }
 
 // nav .animation {
@@ -161,26 +166,35 @@ section.sec3 {
   border-radius: 30px;
 }
 
+.robberDesc p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.copDesc p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
 
 /* Download Button */
 
-#button {
+#buttonDownload {
   color: #e2c373;
-
 }
 
-#button:hover {
+#buttonDownload:hover {
   color: #e2c373;
   text-decoration: none;
 }
 
-.btn a {
+.downloadBtn a {
   text-decoration: none;
   list-style: none;
 }
 
 
-.btn{
+.downloadBtn{
   width: 200px;
   height: 60px;
   background: none;
@@ -196,7 +210,7 @@ section.sec3 {
   margin-top: 50px;
 }
 
-.btn::before, .btn::after{
+.downloadBtn::before, .downloadBtn::after{
   content: "";
   position: absolute;
   width: 14px;
@@ -206,21 +220,21 @@ section.sec3 {
   transition: .4s linear;
 }
 
-.btn::before{
+.downloadBtn::before{
   top: -4px;
   left: 10%;
 }
 
-.btn::after{
+.downloadBtn::after{
   bottom: -4px;
   right: 10%;
 }
 
-.btn:hover::before{
+.downloadBtn:hover::before{
   left: 80%;
 }
 
-.btn:hover::after{
+.downloadBtn:hover::after{
   right: 80%;
 }
 
