@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Introducing PlayerLink – Cops And Robbers – Cops And Robbers by Deranged Senators</title>
+    <title>Getting Started – Cops And Robbers – Cops And Robbers by Deranged Senators</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,13 +9,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Linking of the Players!" />
-    <meta property="og:description" content="Linking of the Players!" />
+    <meta name="description" content="Our Game :)" />
+    <meta property="og:description" content="Our Game :)" />
     
     <meta name="author" content="Cops And Robbers" />
 
     
-    <meta property="og:title" content="Introducing PlayerLink" />
+    <meta property="og:title" content="Getting Started" />
     
 
     
@@ -103,22 +103,133 @@
   <div class="jumbotron" style="background: #15191b">
     <div class="container">
 
-      <h1>Introducing PlayerLink</h1>
-      <h6>Written on November  1, 2020  by Hanzalah Ravat </h6>
+      <h1>Getting Started</h1>
+      <h6>Written on October 15, 2020  by Naim Ahmed </h6>
 
     </div>
   </div>
 
   <div class="container post" style="color:white">
 
-    <h2 id="hello-playerlink">Hello PlayerLink</h2>
-<p>PlayerLink is our new bespoke online multiplayer solution designed with performance, security and scalability in mind. We are writing this libary using native programming APIs which in turn will allow us to maximise hardware performance for the best gaming experience. You can view the progress of PlayerLink by visiting the <a href="https://github.com/derangedsenators/playerlink">GitHub repository</a></p>
+    <style>
+    
+    .column1 {
+        float: left;
+        width: 30%;
+        padding: 5px;
+    }
 
-<h3 id="tcp-or-udp">TCP or UDP?</h3>
-<p>We intend to use BOTH. This way, developers are given the freedom to choose between speed and reliability from a single API without much additional configuration. The TCP communications will be encrypted using the TLS protocol and UDP connections will also be secured using an inhouse technique known as StatefulUDP. This system will use the existing secured TLS connection to establish another shared key which can be used to encrypt all UDP traffic</p>
+    .row1::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
-<h3 id="scalability">Scalability</h3>
-<p>PlayerLink is designed with scalability in mind. We have designed it such that a large majority of processing actually takes place on the client side rather than on the server. This will allow the server to host many more games and also allow for a higher throughput</p>
+    #cop0 {
+        padding-left: 50px;
+    }
+
+    /* #ground {
+        padding-left: 50px;
+    }
+
+    #wall {
+        padding-left: 50px;
+    } */
+
+    #lampPost {
+        padding-left: 50px;
+    }
+
+</style>
+
+<h2 id="introduction">Introduction</h2>
+<p>Cops and Robbers is an online multiplayer party game with competitive elements as two teams battle for
+dominance of resources.
+Designed to be compatible on PC devices. The game makes use of both fast-paced action and thoughtful strategy
+tactics, as players must decide when to make use of the money they’ve gathered to either, secure the win
+through sum or potentially gain an advantage in the tide of battle through use of items and powerups.
+Whilst the game has its competitive elements its focus is to be casual enough as
+to not be off-putting for new users who may feel they are at a disadvantage to veterans in the game.</p>
+
+<h2 id="game-design">Game Design</h2>
+<p>We planned the overall theme of the game and started developing the design and look of the main 
+characters. After various discussions and meetings we concluded on the final design of the two main
+chacraters as well as a rough map idea of how the game is going to look like and where the cops and robbers will be posiitoned.
+The following graphs were made using Clip Studio Paint and each design was made according to the theme of teh game. <br />
+Below you can see the different desing features in the game:</p>
+
+<h3 id="characters-and-first-draft-map">Characters and first draft map</h3>
+
+<div class="row1">
+    <div class="column1" id="cop0">
+        <img src="/assets/images/cop resize.png" height="200" alt="Cop" style="width:30%" />
+    </div>
+    <div class="column1">
+        <img src="/assets/images/robber resize left.png" height="200" alt="Robber" style="width:30%" />
+    </div>
+    <div class="column1">
+        <img src="/assets/images/MAP.png" height="150" alt="Map" style="width:100%" />
+    </div>
+</div>
+
+<h3 id="weapons">Weapons</h3>
+
+<div class="container center">
+    <div class="row weapons">
+        <div class="col-md-12">
+            </div>
+            <div class="col-md-3">
+              <img src="/assets/images/bat.PNG" class="img-fluid img-border" alt="" />
+            </div>
+            <div class="col-md-3">
+              <img src="/assets/images/pipe.PNG" class="img-fluid img-border" alt="" />
+            </div>
+            <div class="col-md-3">
+              <img src="/assets/images/robbergun.PNG" class="img-fluid img-border" alt="" />
+            </div>
+            <div class="col-md-3">
+              <img src="/assets/images/coppergun.PNG" class="img-fluid img-border" alt="" />
+        </div>
+     </div>
+</div>
+
+<h3 id="ground">Ground</h3>
+
+<div class="row1" id="ground">
+    <div class="column1">
+        <img src="/assets/images/ground.png" height="50" alt="Map" style="width:200%" />
+    </div>
+</div>
+
+<h3 id="wall">Wall</h3>
+
+<div class="row1" id="wall">
+    <div class="column1">
+          <img src="/assets/images/walls.png" height="60" alt="Map" style="width:33%" />
+    </div>
+</div>
+
+<h3 id="lamp-post">Lamp post</h3>
+
+<div class="row1">
+    <div class="column1" id="lampPost">
+        <img src="/assets/images/Lamp" height="250" alt="Cop" style="width:45%" />
+    </div>
+</div>
+
+<h2 id="multiplayer">Multiplayer</h2>
+<p>Our project will include a bespoke multiplayer solution. To keep communications fast and secure,
+there are several components. The Server will consist of the following key components:</p>
+
+<p>• Key Exchange Server: This server application will serve random 32-bit values for Diffie Helman Key Exchange.
+These values will automatically update every 90 seconds.</p>
+
+<p>• Game Server: The Game Server will be used for gameplay. 
+Initially we will keep all processing to client side to preserve server bandwidth, so all the server needs to
+do is send data from one player to others in the game. We intend to do this by placing groups into virtual
+rooms. Initially, these groups will consist of random members from the matchmaking lobby, but we plan on
+introducing accounts or private lobbies to allow friends to play together</p>
 
 
   </div>

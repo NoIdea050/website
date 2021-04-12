@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Introducing PlayerLink – Cops And Robbers – Cops And Robbers by Deranged Senators</title>
+    <title>Migrating to Mirror – Cops And Robbers – Cops And Robbers by Deranged Senators</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,13 +9,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Linking of the Players!" />
-    <meta property="og:description" content="Linking of the Players!" />
+    <meta name="description" content="Bye PlayerLink... For now :-(" />
+    <meta property="og:description" content="Bye PlayerLink... For now :-(" />
     
     <meta name="author" content="Cops And Robbers" />
 
     
-    <meta property="og:title" content="Introducing PlayerLink" />
+    <meta property="og:title" content="Migrating to Mirror" />
     
 
     
@@ -103,22 +103,33 @@
   <div class="jumbotron" style="background: #15191b">
     <div class="container">
 
-      <h1>Introducing PlayerLink</h1>
-      <h6>Written on November  1, 2020  by Hanzalah Ravat </h6>
+      <h1>Migrating to Mirror</h1>
+      <h6>Written on December 10, 2020  by Hanzalah Ravat </h6>
 
     </div>
   </div>
 
   <div class="container post" style="color:white">
 
-    <h2 id="hello-playerlink">Hello PlayerLink</h2>
-<p>PlayerLink is our new bespoke online multiplayer solution designed with performance, security and scalability in mind. We are writing this libary using native programming APIs which in turn will allow us to maximise hardware performance for the best gaming experience. You can view the progress of PlayerLink by visiting the <a href="https://github.com/derangedsenators/playerlink">GitHub repository</a></p>
+    <p>Hi everyone. We have been working on the project for around two months now and our progress is coming along smoothly. However, As we are approaching many deadlines we have had to make some decisions regarding PlayerLink and our game. This blog post aims to address these decisions</p>
 
-<h3 id="tcp-or-udp">TCP or UDP?</h3>
-<p>We intend to use BOTH. This way, developers are given the freedom to choose between speed and reliability from a single API without much additional configuration. The TCP communications will be encrypted using the TLS protocol and UDP connections will also be secured using an inhouse technique known as StatefulUDP. This system will use the existing secured TLS connection to establish another shared key which can be used to encrypt all UDP traffic</p>
+<h2 id="playerlink-progress">PlayerLink Progress</h2>
+<p>The Development of PlayerLink has been progressing fairly smoothly so far with myself and Ash having implemented the majority of the low-level native part of the framework and are now beginning to turn our attention towards running tests and adding a <code class="highlighter-rouge">.NET</code> layer to allow PlayerLink to be accessed by <code class="highlighter-rouge">CLR</code> so that it can be used by Unity. The progress can be tracked via the <a href="http://www.github.com/derangedsenators/playerlink">PlayerLink Repository</a></p>
 
-<h3 id="scalability">Scalability</h3>
-<p>PlayerLink is designed with scalability in mind. We have designed it such that a large majority of processing actually takes place on the client side rather than on the server. This will allow the server to host many more games and also allow for a higher throughput</p>
+<h2 id="why-have-we-had-to-pause-playerlink-integration">Why have we had to pause PlayerLink Integration</h2>
+<p>Unfortunately, we have strict deadlines to meet with the Cops And Robbers project which dictates the majority of decisions we make with the project. In this case, we have to deliver an MVP next week and we must have some form of multiplayer implemented by then and with PlayerLink at such a primitive stage with limited test data available, we have had to look elsewhere</p>
+
+<h3 id="enter-mirror">Enter Mirror</h3>
+<p>After a lot of consideration, we have decided to use Mirror to implement Multiplayer in our game. We decided to use Mirror as it is based on UNet which provides us with access to comprehensive documentation and is Open Source allowing us to ensure that the code is sound and secure. Mirror also uses a single codebase for both the client and server reducing the number of projects to maintain</p>
+
+<h2 id="in-other-news">In Other News</h2>
+
+<h3 id="hosting">Hosting</h3>
+<p>In other news, We have decided to use the Google Cloud Platform to host our server for the game. Google Cloud offers us a fast, scalable solution for hosting our game at a resonable price.</p>
+
+<h3 id="documentation-website">Documentation Website</h3>
+<p>Our public documentation website is now live <a href="http://docs.derangedsenators.me">here</a>. This site is auto-generated and provides documentation for all of our public APIs and other tips and tutorials</p>
+
 
 
   </div>

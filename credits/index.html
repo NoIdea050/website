@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Introducing PlayerLink – Cops And Robbers – Cops And Robbers by Deranged Senators</title>
+    <title>Credits – Cops And Robbers – Cops And Robbers by Deranged Senators</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,13 +9,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Linking of the Players!" />
-    <meta property="og:description" content="Linking of the Players!" />
+    <meta name="description" content="Cops And Robbers by Deranged Senators">
+    <meta property="og:description" content="Cops And Robbers by Deranged Senators" />
     
     <meta name="author" content="Cops And Robbers" />
 
     
-    <meta property="og:title" content="Introducing PlayerLink" />
+    <meta property="og:title" content="Credits" />
     
 
     
@@ -99,34 +99,93 @@
         </div>
       </noscript>
 
-      <article class="post">
-  <div class="jumbotron" style="background: #15191b">
-    <div class="container">
-
-      <h1>Introducing PlayerLink</h1>
-      <h6>Written on November  1, 2020  by Hanzalah Ravat </h6>
-
+      <body>
+    <div class="jumbotron" style="background: #15191b">
+        <div class="container">
+            <h1>Credits</h1>
+            <p>Credits to open source components used in the development of our product</p>
+        </div>
     </div>
-  </div>
 
-  <div class="container post" style="color:white">
+    <div class="container">
+        <h2>Website</h2>
+    </div>
 
-    <h2 id="hello-playerlink">Hello PlayerLink</h2>
-<p>PlayerLink is our new bespoke online multiplayer solution designed with performance, security and scalability in mind. We are writing this libary using native programming APIs which in turn will allow us to maximise hardware performance for the best gaming experience. You can view the progress of PlayerLink by visiting the <a href="https://github.com/derangedsenators/playerlink">GitHub repository</a></p>
+    <div class="container">
+        <h3>Using Jekyll</h3>
+        <p>Jekyll is an Open-Source static site generator by GitHub. Jekyll provided many features which helped us
+            to modularize the website such as a looping
+            facility which we could use to render common HTML through a loop rather than copying it out many times.
+            This was especially useful in the Meet the team page as it allowed us to write a single div which
+            contained the semantics for each team member then have the generator generate the page using content
+            provided in markdown files. </p>
+    </div>
+    <div class="container">
+        <h3>SASS and LineageOS</h3>
+        <p>We decided to use SASS over CSS. SASS is built upon CSS but also adds
+            useful tools such as variables to hold common values such as brand colors and fonts etc. The SASS that
+            has been implemented was adapted from the Open-Source LineageOS website found
+            <a href="https://github.com/lineageos/www" target="_blank">here</a>.These SASS components were adapted by
+            LineageOS from the Bootstrap
+            Framework and Material Kit, all of which are licensed under the permissive MIT license.
 
-<h3 id="tcp-or-udp">TCP or UDP?</h3>
-<p>We intend to use BOTH. This way, developers are given the freedom to choose between speed and reliability from a single API without much additional configuration. The TCP communications will be encrypted using the TLS protocol and UDP connections will also be secured using an inhouse technique known as StatefulUDP. This system will use the existing secured TLS connection to establish another shared key which can be used to encrypt all UDP traffic</p>
+            Also, from the LineageOS website, we adapted their blog page, 404 Page and we have also adapted
+            some of their layouts for other pages in our website as we found it to meet our aesthetic requirements
+            and it also provided an efficient way to write blog posts.
+        </p>
+    </div>
+    <div class="container">
+        <h3>Other credits</h3>
+        <ul>
+            <li>
+                Roboto is the font style used in the website.
+            </li>
+            <li>
+                SlickJS was used to make the carousel/slide show found in the home page.
+            </li>
+        </ul>
+    </div>
 
-<h3 id="scalability">Scalability</h3>
-<p>PlayerLink is designed with scalability in mind. We have designed it such that a large majority of processing actually takes place on the client side rather than on the server. This will allow the server to host many more games and also allow for a higher throughput</p>
-
-
-  </div>
-
-  
-
-</article>
-
+    <div class="container">
+        <h2>CopsAndRobbers Game</h2>
+        <ul>
+            <li>
+                Mirror was used to implement multiplayer use Mirror. This is an Open-Source implementation of Unity’s now
+                deprecated UNet library. This library was pre-tested, scalable, had a strong community backing and
+                already had the strong Unity integration that PlayerLink lacked. We then spent the final week of the MVP
+                stage working to port our game to Mirror.
+            </li>
+            <li>
+                JoystickPack for Mobile Controls.
+            </li>
+            <li>
+                TextMeshPro for UI Components.
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Documentation Website</h2>
+        <ul>
+            <li>
+                Doxygen for parsing source code.
+            </li>
+            <li>
+                Doxybook2 to convert Doxygen output into Markdown.
+            </li>
+            <li>
+                MkDocs-Material for converting markdown into documentation website.
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>PlayerLink</h2>
+        <ul>
+            <li>
+                Boost for Multithreading
+            </li>
+        </ul>
+    </div>
+</body>
     </div>
 
     <footer class="footer">

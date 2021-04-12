@@ -22,42 +22,44 @@
 
 
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="/assets/css/material-kit.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
     <link rel="shortcut icon" href="/assets/images/robber-head-transparent-122x118.png">
-    <!--jquery js-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <!-- boostrap css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- popper js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <!-- boostrap js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<!--    &lt;!&ndash; popper js &ndash;&gt;-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--    &lt;!&ndash; boostrap js &ndash;&gt;-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="/assets/js/material-kit.js"> </script>
+
+    <script src="/assets/js/home-nav-controller.js"></script>
+
+
   </head>
 
   <body id="page-top" style="background: #15191b">
     <nav class="navbar fixed-top navbar-expand-lg bg-dark">
       <div class="container">
         <div class="navbar-translate">
-          <a class="navbar-brand" href="/" style="position: relative; top: -18px;"><img src="/assets/images/robber-head-transparent-122x118.png ">Cops and Robbers</a>
+          <a class="navbar-brand" href="/" style="position: relative;"><img src="/assets/images/robber-head-transparent-122x118.png" width="100px" height="100px">Cops and Robbers</a>
           <!-- Right aligned menu below button -->
           <!-- Raised button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" style="fill:white;">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          <button class="navbar-toggler " type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" style="fill:white;">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
@@ -73,6 +75,11 @@
             <li class="nav-item">
               <a class="nav-link" href="/team">Meet The Team</a></li>
             <li class="nav-item">
+              <a class="nav-link" href="/security">Security</a></li>
+            <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="/credits">Credits</a></li>
+            <li class="nav-item">
               <a class="nav-link" href="https://derangedsenators.github.io/docs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
 </svg>
@@ -83,7 +90,6 @@
     </nav>
 
     <div id="main" role="main">
-     <div style="margin-bottom: 20px"></div>
       <noscript>
         <div class="no-script">
           <div class="container">
@@ -94,121 +100,108 @@
       </noscript>
 
       <body>
-  <div class="team-section">
-      <h1 class="title-font">Meet the Team</h1>
-      <div class="team">
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>Nisath M Nasar</h3>
-              <p class="project-role">Game Developer</p>
-              <p class="member-description"><p>Currently in second year of BSc Computer Science. I am skilled in various fields especially in Java and MS Excel. Member of the game and multiplayer development.</p>
-
-</p>
-          </div>
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>Elliot Willis</h3>
-              <p class="project-role">Support</p>
-              <p class="member-description"><p>Currently in my second year of Bsc Cyber Security.</p>
-
-</p>
-          </div>
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>Sahar Batol</h3>
-              <p class="project-role">Website Dev/Graphics Lead</p>
-              <p class="member-description"><p>I am the leader of the web development team and I am also the graphics designer for our game. My roles include collaborating on the creation of the webpage, creating graphical assets and designing the game map layout.</p>
-
-</p>
-          </div>
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>Piotr Krawiec</h3>
-              <p class="project-role">Project Lead</p>
-              <p class="member-description"><p>Currently in second year of BSc Cyber Security. I am the project leader, overseeing what progress the team are making towards the project and keeping things organised.</p>
-
-</p>
-          </div>
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>Naim Ahmed</h3>
-              <p class="project-role">Website/Game Developer</p>
-              <p class="member-description"><p>2nd year student at Aston University Member of the web development team and main game development</p>
-
-</p>
-          </div>
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>J.K</h3>
-              <p class="project-role">Support</p>
-              <p class="member-description"><p>Currently in my second year of Bsc Cyber Security.</p>
-</p>
-          </div>
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>Hanzalah Ravat</h3>
-              <p class="project-role">Server/Game Developer</p>
-              <p class="member-description"><p>Hi, I am Hanzalah and I’m currently in my second year of BSc Cyber Security at Aston. I am a systems engineer mainly working on the low-level components in the project notably leading the multiplayer development and integrating security features. In my free time, I like to tinker with Android AOSP source code and build customised versions.</p>
-
-</p>
-          </div>
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>Hannah Elliman</h3>
-              <p class="project-role">Web/Game Developer</p>
-              <p class="member-description"><p>I am a second year student studying Computer Science. My role in this project has been support for various teams. I’ve mainly been working on the website development.</p>
-
-</p>
-          </div>
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>Ash Jaimal</h3>
-              <p class="project-role">Game Developer</p>
-              <p class="member-description"><p>Hi my name is Ash Jaimal I’m 20 years old and currently in my second year of BSc Computer Science. My role throughout this project has been mostly developer, i have been helping develop the main game within Unity adding features when necessary and also been incorporating multiplayer into the game.</p>
-</p>
-          </div>
-          
-          <div class="team-member">
-              <div class="member-image">
-                  <img src="/assets/images/robber-head-transparent-122x118.png" alt="Naim Image">
-              </div>
-              <h3>Abid Raja</h3>
-              <p class="project-role">Sound Developer</p>
-              <p class="member-description"><p>Currently in my second year of Bsc Computer Science.</p>
-
-</p>
-          </div>
-          
+    <div class="jumbotron" style="background: #15191b">
+      <div class="container">
+        <h1>Meet The Team</h1>
+        <p>Get to know the Deranged Senators Team</p>
       </div>
+    </div>
+    <div class="container">
+      <div class="profiles">
+        
+            <div class="profile">
+                <img src="/assets/images/team/Hannah.jpeg" class="profile-img">
+        
+                <h3 class="user-name">Hannah Elliman</h3>
+                <h5>Website and Game Developer</h5>
+                <p><p>I am a second year student studying Computer Science. My role in this project has been support for various teams. I’ve mainly been working on the website development.</p>
 
-  </div>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Naim.PNG" class="profile-img">
+        
+                <h3 class="user-name">Naim Ahmed</h3>
+                <h5>Website and Game Developer</h5>
+                <p><p>Member of the web development team and main game development. Coding and helping with C# and making the website.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Peter.PNG" class="profile-img">
+        
+                <h3 class="user-name">Piotr Krawiec</h3>
+                <h5>Project Lead</h5>
+                <p><p>Currently in second year of BSc Cyber Security. I am the project leader, overseeing what progress the team are making towards the project and keeping things organised.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Abid.PNG" class="profile-img">
+        
+                <h3 class="user-name">Muhammad Abid Raja</h3>
+                <h5>Sound Developer</h5>
+                <p><p>Hi my name is Muhammad Raja. I’m a 19 years old and currently in my second year of BSc Computer Science. My role throughout this project has been to record, develop and implement the sounds necessary for the game.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Ash.jpeg" class="profile-img">
+        
+                <h3 class="user-name">Ash Jaimal</h3>
+                <h5>Game Developer</h5>
+                <p><p>Hi my name is Ash Jaimal I’m 20 years old and currently in my second year of BSc Computer Science. My role throughout this project has been one of the main developers of the game.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Elliot.jpeg" class="profile-img">
+        
+                <h3 class="user-name">Elliot Willis</h3>
+                <h5>Support</h5>
+                <p><p>I am currently a second year cyber security student - I program in Java and have been creating the in-game UI and the Launcher application. I am also part of the security portion of the team.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/hanzalah.PNG" class="profile-img">
+        
+                <h3 class="user-name">Hanzalah Ravat</h3>
+                <h5>Server and Game Developer</h5>
+                <p><p>Hi, I am Hanzalah and I’m currently in my second year of BSc Cyber Security at Aston. I am a software engineer mainly working on the low-level components in the project notably leading the multiplayer development and integrating security features. I have also worked on the website integrating jekyll and SASS components</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/robberhead.PNG" class="profile-img">
+        
+                <h3 class="user-name">J.K</h3>
+                <h5>Support</h5>
+                <p><p>Currently in my second year of Bsc Cyber Security.</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/Nisath.PNG" class="profile-img">
+        
+                <h3 class="user-name">Nisath M Nasar</h3>
+                <h5>Game Developer</h5>
+                <p><p>Member of the game development, responsible for adding features, solving problems and building solutions. Also has rad MSPaint skills!</p>
+</p>
+            </div>
+            
+            <div class="profile">
+                <img src="/assets/images/team/robberhead.PNG" class="profile-img">
+        
+                <h3 class="user-name">Sahar Batol</h3>
+                <h5>Website and Graphics Lead</h5>
+                <p><p>I am the leader of the web development team and I am also the graphics designer for our game. My roles include collaborating on the creation of the webpage, creating graphical assets and designing the game map layout.</p>
+</p>
+            </div>
+            
+        </div>
+    </div>
 </body>
 
     </div>
